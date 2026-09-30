@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ff1493">
+<title>MII'S COMMISSIONS ✦ Y2K School Designs</title>
+<style>
+@font-face{
+  font-family:Angelica;
+  src:url('./angelica.ttf') format('truetype');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+:root{
+  --pink:#ff1493;
+  --pink2:#ff66b5;
+  --soft:#ffd6ea;
+  --pale:#fff4fa;
+  --black:#090609;
+  --ink:#1d0a18;
+  --white:#fff;
+  --purple:#8e4fb3;
+  --shadow:7px 7px 0 var(--black);
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:58px}
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    linear-gradient(rgba(255,244,250,.91),rgba(255,244,250,.91)),
+    url('./lace.png') center/420px repeat;
+  font-family:Arial,Helvetica,sans-serif;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.display,.display *,.ticker,.nav a,.price,.sticker,.section-title,.btn,.mini,.step-no,.footer-logo{
+  font-family:Angelica,'Arial Black',Impact,sans-serif;
+  letter-spacing:.4px;
+}
+/* Top strip */
+.ticker{
+  height:38px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  white-space:nowrap;
+  background:var(--black);
+  color:#ff75bd;
+  border-bottom:3px solid var(--pink);
+  font-size:18px;
+}
+.ticker-track{display:inline-block;padding-left:100%;animation:marquee 22s linear infinite}
+@keyframes marquee{to{transform:translateX(-100%)}}
+/* Hero */
+.hero{
+  position:relative;
+  min-height:clamp(620px,88vh,820px);
+  display:grid;
+  place-items:center;
+  padding:90px 20px 70px;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    linear-gradient(135deg,rgba(0,0,0,.93),rgba(47,0,45,.90)),
+    url('./stripes.png') center/cover;
+  border-bottom:7px solid var(--black);
+}
+.hero:before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    radial-gradient(circle at 15% 25%,rgba(255,20,147,.32),transparent 23%),
+    radial-gradient(circle at 88% 75%,rgba(255,105,180,.25),transparent 24%);
+}
+.hero:after{
+  content:"";position:absolute;right:-35px;top:80px;width:min(250px,32vw);aspect-ratio:1;
+  background:url('./lips.png') center/contain no-repeat;
+  transform:rotate(9deg);opacity:.95;pointer-events:none;
+}
+.hero-inner{width:min(var(--max),100%);text-align:center;position:relative}
+.mini{
+  display:inline-block;background:var(--pink);color:#000;border:3px solid #000;
+  box-shadow:4px 4px 0 #fff;padding:8px 15px;font-size:18px;transform:rotate(-2deg)
+}
+.hero h1{
+  margin:35px 0 25px;
+  font-size:clamp(64px,11.5vw,150px);
+  line-height:.76;
+  color:#ff62b6;
+  text-shadow:7px 7px #000,-2px -2px #fff;
+  overflow-wrap:anywhere;
+}
+.hero h1 span{color:#fff}
+.hero-copy{max-width:680px;margin:0 auto 30px;color:#fff;font-size:clamp(16px,2.3vw,21px);line-height:1.55}
+.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:50px;padding:12px 20px;text-decoration:none;
+  background:var(--pink2);color:#000;border:4px solid #000;box-shadow:6px 6px 0 #fff;
+  font-size:20px;font-weight:700;transition:transform .12s ease,box-shadow .12s ease
+}
+.btn.alt{background:#fff}
+.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 #fff}
+/* Nav */
+.nav{
+  position:sticky;top:0;z-index:100;display:flex;justify-content:center;gap:24px;
+  padding:9px 14px;background:rgba(0,0,0,.97);border-bottom:4px solid var(--pink);
+  overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none
+}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;color:#fff;text-decoration:none;font-size:18px;padding:3px 0}
+.nav a:hover{color:var(--pink2)}
+/* Main */
+main{width:min(var(--max),calc(100% - 28px));margin:0 auto}
+section{padding:76px 0}
+.section-title{margin:0 0 34px;text-align:center;color:var(--pink);font-size:clamp(42px,7vw,76px);line-height:.9;text-shadow:3px 3px #000;overflow-wrap:anywhere}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.card{
+  position:relative;min-width:0;min-height:245px;padding:24px;background:#fff;border:4px solid #000;
+  box-shadow:var(--shadow);overflow:hidden
+}
+.card:nth-child(2){background:var(--soft);transform:rotate(1deg)}
+.card:nth-child(3){background:#eadbff;transform:rotate(-1deg)}
+.card h3{font-family:Angelica,'Arial Black',sans-serif;font-size:34px;line-height:1;margin:0 0 12px}
+.card p{line-height:1.55;margin:0 0 15px}
+.price{font-size:34px;color:var(--pink);text-shadow:2px 2px #000}
+.card:after{content:"";position:absolute;right:-22px;bottom:-25px;width:100px;height:100px;background:url('./lips.png') center/contain no-repeat;opacity:.22;transform:rotate(-12deg)}
+/* Pricing */
+.notice{
+  max-width:960px;margin:0 auto 28px;padding:22px;background:#000;color:#fff;
+  border:5px solid var(--pink);box-shadow:var(--shadow)
+}
+.notice-title{font-family:Angelica,sans-serif;color:#ff75bd;font-size:29px}
+.notice p{line-height:1.55;margin:8px 0 0}.notice strong{color:#ff75bd}
+.pricing{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.price-card{
+  min-width:0;padding:27px;background:
+    linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.88)),url('./blah.png') center/270px repeat;
+  border:5px solid #000;box-shadow:var(--shadow)
+}
+.price-card h3{font-family:Angelica,'Arial Black',sans-serif;font-size:37px;line-height:1;margin:0}
+.range{font-family:Angelica,sans-serif;font-size:52px;color:var(--pink);text-shadow:2px 2px #000;margin:9px 0 13px}
+.price-card ul{margin:0;padding-left:21px;line-height:1.8}
+/* How */
+.how{
+  padding:32px;color:#fff;background:
+    linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.88)),url('./leopard.png') center/cover;
+  border:5px solid #000;box-shadow:var(--shadow)
+}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.step{min-width:0;padding:18px;border:3px solid var(--pink2);background:rgba(255,20,147,.11)}
+.step-no{font-size:42px;color:#ff75bd;line-height:1}
+.step b{display:block;margin-top:7px}.step p{line-height:1.5;margin-bottom:0}
+/* Order */
+.order-note{margin-bottom:22px}
+.form-wrap{padding:20px;background:#fff;border:5px solid #000;box-shadow:var(--shadow)}
+.form-wrap iframe{display:block;width:100%;min-height:1050px;border:0;background:#fff}
+.form-fallback{text-align:center;margin:14px 0 0;line-height:1.5}
+.form-fallback a{color:var(--pink);font-weight:800}
+/* Footer */
+footer{margin-top:50px;padding:46px 20px 55px;text-align:center;color:#fff;background:
+  linear-gradient(rgba(0,0,0,.91),rgba(0,0,0,.91)),url('./stripes.png') center/cover;border-top:6px solid var(--pink)}
+.footer-logo{font-size:46px;color:#ff70ba;line-height:1}
+footer p{margin:12px auto 0;max-width:620px;line-height:1.5}
+/* Responsive */
+@media(max-width:850px){
+  .cards,.pricing{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero{min-height:700px;padding-top:75px}
+  .hero:after{width:180px;right:-55px;top:65px;opacity:.65}
+  .hero h1{font-size:clamp(58px,15vw,105px)}
+}
+@media(max-width:560px){
+  html{scroll-padding-top:53px}
+  .ticker{height:34px;font-size:15px}
+  .hero{min-height:650px;padding:62px 14px 48px}
+  .hero:after{width:130px;right:-40px;top:48px}
+  .mini{font-size:14px;padding:7px 11px}
+  .hero h1{font-size:clamp(49px,16.5vw,78px);margin:28px 0 20px;line-height:.82;text-shadow:5px 5px #000,-1px -1px #fff}
+  .hero-copy{font-size:15px;line-height:1.5}
+  .actions{display:grid;grid-template-columns:1fr;gap:11px;max-width:330px;margin:auto}
+  .btn{width:100%;font-size:17px;box-shadow:5px 5px 0 #fff}
+  .nav{justify-content:flex-start;gap:18px;padding:8px 13px}
+  .nav a{font-size:15px}
+  main{width:min(100% - 20px,var(--max))}
+  section{padding:55px 0}
+  .section-title{font-size:clamp(38px,12vw,58px);margin-bottom:27px}
+  .card,.price-card,.how,.form-wrap{box-shadow:5px 5px 0 #000}
+  .card:nth-child(2),.card:nth-child(3){transform:none}
+  .notice{padding:17px;margin-bottom:23px;box-shadow:5px 5px 0 #000}
+  .notice-title{font-size:24px}
+  .pricing{gap:19px}
+  .price-card{padding:21px}
+  .price-card h3{font-size:31px}
+  .range{font-size:43px}
+  .how{padding:19px}
+  .steps{grid-template-columns:1fr;gap:12px}
+  .form-wrap{padding:10px}
+  .form-wrap iframe{min-height:1100px}
+  .footer-logo{font-size:38px}
+}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="ticker"><div class="ticker-track">✦ MII'S COMMISSIONS ✦ POSTERS ✦ SLOGANS ✦ PUBMATS ✦ Y2K GLAM ✦ SCHOOL PROJECTS ✦ MII'S COMMISSIONS ✦</div></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="mini">♡ ACCEPTING COMMISSIONS ♡</div>
+    <h1 class="display">MII'S<br><span>COMMISSIONS</span></h1>
+    <p class="hero-copy">Cute, loud, Y2K-style school visuals for your next project — posters, slogans, pubmats, layouts and more.</p>
+    <div class="actions">
+      <a class="btn" href="#order">ORDER A COMMISSION</a>
+      <a class="btn alt" href="#prices">SEE PRICES</a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Main navigation">
+  <a href="#services">SERVICES</a>
+  <a href="#prices">PRICES</a>
+  <a href="#how">HOW IT WORKS</a>
+  <a href="#order">ORDER</a>
+</nav>
+
+<main>
+<section id="services">
+  <h2 class="section-title">WHAT I DO ✦</h2>
+  <div class="cards">
+    <article class="card"><h3>POSTERS</h3><p>Eye-catching school posters, announcements and project visuals with a custom Y2K-inspired look.</p><div class="price">₱70–₱90</div></article>
+    <article class="card"><h3>SLOGANS</h3><p>Short, catchy original slogan ideas for school campaigns, posters and creative projects.</p><div class="price">₱30–₱50</div></article>
+    <article class="card"><h3>CUSTOM</h3><p>Need something different? Send your idea, references and deadline for a custom quote.</p><div class="price">ASK ✦</div></article>
+  </div>
+</section>
+
+<section id="prices">
+  <h2 class="section-title">PRICE MENU</h2>
+  <div class="notice">
+    <div class="notice-title">⚠ DEADLINE NOTICE ⚠</div>
+    <p>Please submit your commission request <strong>AT LEAST 1 DAY (24 HOURS) BEFORE YOUR DEADLINE.</strong> Requests with less than 24 hours' notice may receive a <strong>RUSH FEE (+30%)</strong> depending on the workload and availability.</p>
+  </div>
+  <div class="pricing">
+    <article class="price-card"><h3>♡ SLOGAN</h3><div class="range">₱30–₱50</div><ul><li>Short original slogan</li><li>Up to 3 initial concepts</li><li>Minor wording revision</li><li>Final text delivered digitally</li></ul></article>
+    <article class="price-card"><h3>♡ POSTER</h3><div class="range">₱70–₱90</div><ul><li>1 custom poster design</li><li>Client-provided details/content</li><li>1–2 minor revisions</li><li>Final high-resolution file</li></ul></article>
+    <article class="price-card"><h3>♡ OTHER SCHOOL VISUALS</h3><div class="range">QUOTE</div><ul><li>Pubmats / announcements</li><li>Infographics</li><li>Presentation graphics</li><li>Custom layouts</li></ul></article>
+    <article class="price-card"><h3>♡ EXTRA</h3><div class="range">ASK</div><ul><li>Major revisions</li><li>Rush requests</li><li>Complex illustrations</li><li>Multiple design variations</li></ul></article>
+  </div>
+</section>
+
+<section id="how">
+  <h2 class="section-title">HOW IT WORKS</h2>
+  <div class="how">
+    <div class="steps">
+      <div class="step"><div class="step-no">01</div><b>SEND DETAILS</b><p>Tell me what you need, your references, size and deadline.</p></div>
+      <div class="step"><div class="step-no">02</div><b>GET A QUOTE</b><p>I'll confirm the price, availability and estimated turnaround.</p></div>
+      <div class="step"><div class="step-no">03</div><b>DESIGN TIME</b><p>Once the commission is confirmed, I start working on your design.</p></div>
+      <div class="step"><div class="step-no">04</div><b>RECEIVE FILE</b><p>You'll receive the finished digital file after the agreed revisions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <h2 class="section-title">PLACE AN ORDER ✦</h2>
+  <div class="notice order-note">
+    <div class="notice-title">♡ BEFORE YOU SUBMIT</div>
+    <p>Try to send your request <strong>24 HOURS BEFORE THE DEADLINE</strong>. Less than 24 hours may mean a <strong>+30% rush fee</strong>.</p>
+  </div>
+  <div class="form-wrap">
+    <iframe title="Mii's Commissions order form" src="https://docs.google.com/forms/d/e/1FAIpQLSfFZvZB3yzjaXSWSrGBhbvj7jRvraBQ1--hiA_4bdTYsZKgwA/viewform?embedded=true" loading="lazy">Loading…</iframe>
+    <p class="form-fallback">If the form does not load, <a href="https://forms.gle/19BfcAzKVED1ezsw7" target="_blank" rel="noopener">open the commission form directly ↗</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo">MII'S COMMISSIONS ✦</div>
+  <p>Y2K-inspired school designs made with sparkle, attitude and way too much pink.</p>
+</footer>
+</body>
+</html>
